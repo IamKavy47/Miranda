@@ -134,6 +134,16 @@
         font-size: 200px;
         letter-spacing: -8px;
         line-height: 180px;
+        margin-bottom: 0;
+        padding-bottom: 20px;
+        overflow: visible;
+    }
+    
+    /* Fix container issues on mobile */
+    #page1 {
+        overflow: visible; /* Override the overflow hidden that might be cutting text */
+        margin-bottom: 20px; /* Add margin to ensure visibility */
+        padding-bottom: 20px; /* Extra padding at bottom */
     }
     
     #elem1 p, #elem3 p, #page2-left p, #page4-right p {
