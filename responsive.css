@@ -1,0 +1,299 @@
+/* Responsive CSS for Miranda Portfolio Website */
+
+/* Base responsive settings */
+@media (max-width: 1400px) {
+    #page1 h1 {
+        font-size: 500px;
+        letter-spacing: -15px;
+        line-height: 400px;
+    }
+    
+    #page2-left h2 {
+        font-size: 120px;
+        line-height: 120px;
+    }
+    
+    #page2-left h2 span {
+        font-size: 170px;
+    }
+    
+    #page2-right h1 {
+        font-size: 110px;
+    }
+    
+    #page3 h1 {
+        font-size: 400px;
+        line-height: 350px;
+    }
+}
+
+/* Tablet and smaller desktops */
+@media (max-width: 1024px) {
+    #page1 h1 {
+        font-size: 350px;
+        letter-spacing: -10px;
+        line-height: 300px;
+    }
+    
+    #elems {
+        padding: 30px;
+        height: auto;
+        flex-direction: column;
+    }
+    
+    #elem1, #elem2, #elem3 {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    
+    #elem2 {
+        border-left: none;
+        border-right: none;
+        border-top: 2px solid #acacac;
+        border-bottom: 2px solid #acacac;
+        padding: 30px 0;
+    }
+    
+    #elem2 h2 {
+        font-size: 60px;
+    }
+    
+    #elem2 h3 {
+        font-size: 40px;
+    }
+    
+    #page2 {
+        flex-direction: column;
+        height: auto;
+        padding: 50px 30px;
+    }
+    
+    #page2-left {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #4b4b4b;
+        padding-right: 0;
+        padding-bottom: 50px;
+        margin-bottom: 50px;
+    }
+    
+    #page2-right {
+        width: 100%;
+        padding: 0;
+    }
+    
+    #page2-right h1 {
+        font-size: 80px;
+    }
+    
+    #page3 h1 {
+        font-size: 250px;
+        line-height: 220px;
+    }
+    
+    #page3 img {
+        height: 300px;
+    }
+    
+    #page4 {
+        flex-direction: column;
+        height: auto;
+    }
+    
+    #page4-left {
+        width: 100%;
+        padding: 50px 30px;
+    }
+    
+    #page4-right {
+        width: 100%;
+        padding: 0 30px 50px;
+    }
+    
+    #page5 h1 {
+        font-size: 70px;
+    }
+}
+
+/* Mobile devices */
+@media (max-width: 768px) {
+    #nav {
+        height: 80px;
+        padding: 0 20px;
+    }
+    
+    #nav img {
+        width: 40%;
+    }
+    
+    #nav h5 {
+        font-size: 16px;
+    }
+    
+    #page1 h1 {
+        font-size: 200px;
+        letter-spacing: -8px;
+        line-height: 180px;
+    }
+    
+    #elem1 p, #elem3 p, #page2-left p, #page4-right p {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    
+    #page2-left h2 {
+        font-size: 80px;
+        line-height: 80px;
+    }
+    
+    #page2-left h2 span {
+        font-size: 120px;
+    }
+    
+    #page2-right h1 {
+        font-size: 50px;
+    }
+    
+    #page3 h1 {
+        font-size: 150px;
+        line-height: 140px;
+        letter-spacing: -5px;
+    }
+    
+    #page3 img {
+        height: 200px;
+    }
+    
+    #page4-right #anda {
+        height: 200px;
+    }
+    
+    #anda h1 {
+        font-size: 70px;
+    }
+    
+    #anda img {
+        height: 40px;
+    }
+    
+    #page5 h1 {
+        font-size: 50px;
+    }
+}
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+    #page1 {
+        height: auto;
+        min-height: 100vh;
+    }
+    
+    #page1 h1 {
+        font-size: 120px;
+        letter-spacing: -5px;
+        line-height: 110px;
+    }
+    
+    #elems {
+        padding: 20px;
+    }
+    
+    #elem1 h4, #elem3 h4 {
+        font-size: 20px;
+    }
+    
+    #elem1 h4 span, #elem3 h4 span {
+        font-size: 14px;
+    }
+    
+    #elem2 h2 {
+        font-size: 45px;
+    }
+    
+    #elem2 h3 {
+        font-size: 30px;
+    }
+    
+    #elem2 h6 {
+        font-size: 16px;
+    }
+    
+    #page2-left h2 {
+        font-size: 60px;
+        line-height: 60px;
+    }
+    
+    #page2-left h2 span {
+        font-size: 90px;
+    }
+    
+    #page3 h1 {
+        font-size: 100px;
+        line-height: 90px;
+        letter-spacing: -3px;
+    }
+    
+    #page3 img {
+        height: 120px;
+        right: 5%;
+    }
+    
+    #page4-right #anda {
+        height: 150px;
+    }
+    
+    #anda h1 {
+        font-size: 50px;
+    }
+    
+    #anda img {
+        height: 30px;
+    }
+    
+    #page5 h1 {
+        font-size: 35px;
+    }
+}
+
+/* Fix for GSAP animation on mobile */
+@media (max-width: 768px) {
+    /* Adjust GSAP animations for mobile - add these classes for JS to detect */
+    .mobile-view {
+        display: block;
+    }
+    
+    .desktop-view {
+        display: none;
+    }
+}
+
+/* Fix for horizontal scrolling issues */
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+/* Added for better scrolling on mobile devices */
+#main {
+    position: relative;
+    width: 100%;
+}
+
+/* Ensure images are responsive */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Fix font loading issues on mobile */
+@font-face {
+    font-family: domain;
+    src: url(/fonts/domain.ttf) format('truetype');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: canopee;
+    src: url(/fonts/canopee.ttf) format('truetype');
+    font-display: swap;
+}
