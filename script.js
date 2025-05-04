@@ -80,3 +80,17 @@ function setVH() {
 // Set the height of the viewport
 setVH();
 window.addEventListener('resize', setVH);
+
+// Fix for MIRANDA heading visibility - adjust after animation completes
+tl.eventCallback("onComplete", function() {
+    // Make sure the heading is fully visible after animations
+    const mirandaHeading = document.querySelector("#page1 h1");
+    if (mirandaHeading) {
+        mirandaHeading.style.overflow = "visible";
+        // Force a small scroll to refresh rendering
+        window.scrollBy(0, 1);
+        window.scrollBy(0, -1);
+        // Update locomotive scroll
+        scroll.update();
+    }
+});
